@@ -1,0 +1,35 @@
+/* ヘッダーの分余白を開ける */
+body.container {
+  padding-top: 70px;
+}
+
+/* 選択肢全体をクリック可能にする */
+.choice-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.choice-option .form-check-input {
+  flex-shrink: 0;
+}
+
+/* 選択済みの問題カードの枠線を変更する */
+.question-card:has(.form-check-input:checked) {
+  border-color: var(--bs-primary) !important;
+  border-width: 1px;
+}
+
+/* 結果画面の選択肢 */
+.choice-option {
+  display: flex;
+  align-items: center;
+}
+
+.choice-option .form-check-input {
+  flex-shrink: 0;
+}
+
+.choice-option input:disabled {
+  opacity: 1;
+}
